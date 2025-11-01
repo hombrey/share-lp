@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title> 
+    <meta name="description" content"">
+    <meta name="author" content="Hombrey">
+    <link rel="stylesheet" href="./PeepWave/styles.css">
+</head>
+
+<body id="myBody">
+    <img class="basebg" id="baseback" src="./PeepWave/img/background.jpg">
+    <img class="fullPage" id="backgroundX" src="./PeepWave/img/scene0.jpg">
+    <div id="srcdir" style="display:none;">./PeepWave/</div>
+    <div id="assetdir" style="display:none">./</div>
+    <div id="altwavcount" style="display:none">0</div>
+    <canvas class="canvasClass" id="canvas" width="1280" height="720" ></canvas>
+    <div id="pauseIndicator"></div>
+    <select class="selectBox" id="dummy"><option>Peep Wave</option></select>
+    <script type="text/javascript" src="./PeepWave/functions.js" ></script> 
+</body> 
+    <script> 
+      function initArrays() {
+          wavSet = [new sound (srcDir+"wav/pick.mp3"),
+          new sound (srcDir+"wav/pick.mp3")];
+          picSet = [ {src: "", wav: 0},
+              {src: "0_hello.webp", wav: 1 },
+              {src: "1_warm-up.webp", wav: 2 },
+              {src: "2_classMgt.webp", wav: 3 },
+              {src: "4_intro-Song.jpg", wav: 4 },
+              {src: "5a_playground.webp", wav: 5 },
+              {src: "5b_classroom.webp", wav: 6 },
+              {src: "5c_musicRoom.webp", wav: 7 },
+              {src: "5d_computerRoom.webp", wav: 8 },
+              {src: "5e_danceStudio.webp", wav: 9 },
+              {src: "5f_swimmingPool.webp", wav: 10 },
+              {src: "5g_library.webp", wav: 11 },
+              {src: "6_Review-WhereCanYou.webp", wav: 12 },
+              {src: "7_corners.jpg", wav: 13 },
+              {src: "8a_findTheTeacher.webp", wav: 14 },
+              {src: "8b_danceStudio.webp", wav: 15 },
+              {src: "8c_playground.webp", wav: 16 },
+              {src: "8d_compRoom.webp", wav: 17 },
+              {src: "8d_library.webp", wav: 18 },
+              {src: "9_bye.webp", wav: 19 },
+          {}];
+      } // function initArrays()
+    </script> 
+</html> 
