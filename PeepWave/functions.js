@@ -161,7 +161,14 @@ function initWin() {
     //Get a reference to the canvas
     bgX = document.getElementById('backgroundX');
     bgX.setAttribute('onclick','nextScene(imgIndex+1)');
+
     bgX.setAttribute('oncontextmenu','nextScene(imgIndex-1)');
+
+		const realBG = document.createElement('img');
+		realBG.setAttribute('id','baseback');
+		realBG.setAttribute('class','basebg');
+		realBG.setAttribute('src','./PeepWave/img/background.jpg');
+		document.body.appendChild(realBG);
 
         // stay on current scene if src image (likely from 'alt') is not found
         bgX.onerror = function ()  {
